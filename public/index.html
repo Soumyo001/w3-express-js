@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Eagle Creek Golf Club, Stay and Play — a championship-level course in Orlando, FL. Book your stay and tee time." />
+  <title>Eagle Creek Golf Club - Stay&amp;Play</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hotel-datepicker/dist/css/hotel-datepicker.css" />
+</head>
+
+<body>
+  <header>
+    <div class="brand-logo">
+      <a href="#" class="brand-logo__link">
+        <img src="assets/icons-white/brand-logo.svg" alt="Brand Logo" width="32" height="32" />
+        <span class="brand-logo__name">
+          Stay
+          <span class="brand-logo__amp">&amp;</span>
+          Play
+        </span>
+      </a>
+    </div>
+    <nav class="nav-bar">
+      <ul class="nav-bar__list">
+        <li><a href="#" class="nav-bar__link">Home</a></li>
+        <li><a href="#" class="nav-bar__link">Where to stay</a></li>
+        <li><a href="#" class="nav-bar__link">Where to play</a></li>
+        <li><a href="#" class="nav-bar__link">Group Travel</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="header-btn">
+      <img src="assets/icons-white/play-golf.svg" alt="" width="20" height="20" class="header-btn__icon" />
+      <span class="header-btn__text">Book a tee time</span>
+    </button>
+    <div class="search-bar">
+      <img src="assets/icons-white/search.svg" alt="search icon" class="search-bar__icon" />
+      <input type="text" placeholder="search" class="search-bar__input" />
+    </div>
+    <button type="button" class="nav-btn">
+      <img src="assets/icons-white/menu.svg" alt="" width="24" height="24">
+    </button>
+  </header>
+  <main>
+    <div class="left-side-container">
+      <!-- Gallery section -->
+      <section class="mt-5 container">
+        <nav class="breadcrumb">
+          <ul class="breadcrumb__list">
+            <li><a href="#">Golf Course</a></li>
+            <li><a href="#">&rsaquo;</a></li>
+            <li><a href="#">Florida</a></li>
+            <li><a href="#">&rsaquo;</a></li>
+            <li><a href="#">Orlando</a></li>
+            <li><a href="#">&rsaquo;</a></li>
+            <li><a href="#">Eagle Creek Golf Club</a></li>
+          </ul>
+        </nav>
+        <h1 class="title">Eagle Creek Golf Club, Stay and Play</h1>
+        <div class="meta-details">
+          <span class="meta-details__ratings">
+            <span class="meta-details__ratings__stars">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star star-muted"></span>
+            </span>
+            <strong class="meta-details__scores">9.0</strong>
+            <span class="meta-details__reviews">(3 Reviews)</span>
+          </span>
+          <span class="divider"></span>
+          <span class="meta-details__time">
+            <span class="meta-details__time__icon"></span>
+            <span>Tee Times Daily 7 AM - 6 PM</span>
+          </span>
+        </div>
+        <div class="ph gallery-layout">
+          <div class="gallery-layout__grid">
+            <figure class="gallery-layout__main">
+              <img src="assets/1.jpg" alt="image-1"/>
+            </figure>
+            <img src="assets/2.jpg" alt="image-2" class="gallery-layout__thumb"/>
+            <img src="assets/3.jpg" alt="image-3" class="gallery-layout__thumb"/>
+          </div>
+          <div class="gallery-layout__carousel" id="heroTrack"></div>
+          <div class="carousel-dots">
+            <div class="carousel-dots__window" id="heroDots">
+              <div class="carousel-dots__strip" id="heroDotsStrip"></div>
+            </div>
+          </div>
+          <button type="button" class="gallery-layout__arrow gallery-layout__arrow--prev" id="heroPrev">&lsaquo;</button>
+          <button type="button" class="gallery-layout__arrow gallery-layout__arrow--next" id="heroNext">&rsaquo;</button>
+          <span class="gallery-layout__counter" id="heroCounter"></span>
+          <button type="button" class="gallery-layout__view" id="openGalleryBtn">
+            View all images
+          </button>
+        </div>
+        <!-- booking side content mobile view -->
+        <div class="promo">
+          <div class="promo__col">
+            <div class="promo__head">
+              <span class="promo__icon promo__icon__stay"><img src="assets/icons-white/bed.svg" alt="" width="18"
+                  height="18" /></span>
+              <span class="promo__label promo__label__stay">Stay</span>
+            </div>
+            <div class="promo__box">
+              <div class="promo__stat"><strong>800+</strong><span>Places to stay near by</span></div>
+              <div class="promo__stat promo__stat__from"><span>From</span><strong>$300</strong></div>
+            </div>
+            <button type="button" class="promo__btn promo__btn__stay">Book a place to stay</button>
+          </div>
+          <div class="promo__col">
+            <div class="promo__head">
+              <span class="promo__icon promo__icon__play"><img src="assets/icons-white/play-golf.svg" alt="" width="18"
+                  height="18" /></span>
+              <span class="promo__label promo__label__play">Play</span>
+            </div>
+            <div class="promo__box">
+              <div class="promo__stat"><span>Peak</span><strong>$100</strong><span>Round</span></div>
+              <div class="promo__stat promo__stat__extra">
+                <span>Off-Peak</span><strong>$75</strong><span>Round</span>
+              </div>
+              <div class="promo__stat promo__stat__extra">
+                <span>Twilight</span><strong>$60</strong><span>Round</span>
+              </div>
+            </div>
+            <button type="button" class="promo__btn promo__btn__play">Book a tee time</button>
+          </div>
+        </div>
+
+        <p class="description">
+          Eagle Creek Golf Club combines scenic views with a championship-level course that offers a
+          memorable golfing experience. Nestled amidst lush landscapes and serene water features, this
+          course is known for its challenging design and exceptional playing conditions, making it a
+          must-play destination for golf enthusiasts.<span class="description__more"> Designed to
+          challenge every level of player, the layout winds through mature oaks, native wetlands and
+          rolling fairways, where well-placed bunkers and water hazards reward thoughtful shot-making.
+          Beyond the course, guests enjoy a full-service clubhouse, a driving range and putting greens,
+          and warm Florida hospitality that makes Eagle Creek an unforgettable stay-and-play
+          destination.</span>
+          <button type="button" class="readmore" id="descriptionToggle">
+            <span class="readmore__label">Read more</span>
+            <img src="assets/icons/chevron-down.svg" alt="" width="16" height="16" class="readmore__icon"/>
+          </button>
+        </p>
+        <div class="glance">
+          <span class="glance__title">Eagle Creek Golf Club at a glance</span>
+          <ul class="glance__list">
+            <li><img src="assets/icons/play-golf.svg" alt="golf"/> Par: 72</li>
+            <li><img src="assets/icons/yards.svg" alt="yard"/> Total Yards: 7305</li>
+            <li><img src="assets/icons/users.svg" alt="user"/> Public Course</li>
+          </ul>
+          <button type="button" class="glance__cta">
+            More Course Highlights
+          </button>
+        </div>
+      </section>
+
+      <!-- Booking side content -->
+      <aside class="booking">
+        <div class="booking__card">
+          <p class="booking__price"><strong>USD $2026</strong> <span>Avg per night</span></p>
+          <div class="booking__dates">
+            <button type="button" class="booking__field" id="checkinField">
+              <span class="booking__field-label">Check-in</span>
+              <span class="booking__field-value" id="checkinValue">Add date</span>
+              <img src="assets/icons/chevron-down.svg" alt="" width="16" height="16" class="booking__field-icon" />
+            </button>
+            <button type="button" class="booking__field" id="checkoutField">
+              <span class="booking__field-label">Check-out</span>
+              <span class="booking__field-value" id="checkoutValue">Add date</span>
+              <img src="assets/icons/chevron-down.svg" alt="" width="16" height="16" class="booking__field-icon" />
+            </button>
+          </div>
+          <input type="text" id="dateRange" class="booking__daterange" readonly />
+          <button type="button" class="booking__field" id="guestsField">
+            <span class="booking__field-label">Guests</span>
+            <span class="booking__field-value" id="guestsValue">1 Guest</span>
+            <img src="assets/icons/chevron-down.svg" alt="" width="16" height="16" class="booking__field-icon" />
+          </button>
+          <p class="booking__available">
+            <span class="booking__check"><img src="assets/icons-white/check.svg" alt="" width="12" height="12" /></span>
+            Dates selected are available
+          </p>
+          <div class="booking__rows">
+            <div class="booking__row"><span>Price per night</span><span id="pricePerNight">USD $2026</span></div>
+            <div class="booking__row booking__row__total"><span>Total price</span><span id="totalPrice">USD $2026</span></div>
+          </div>
+          <button type="button" class="booking__cta">Check Availability</button>
+          <p class="booking__note">You will be redirected to <strong class="booking__brand">Booking.com</strong></p>
+          <p class="booking__deal">
+            <img src="assets/icons/fire.svg" alt="" width="16" height="16" />
+            Hot Deal - it has been viewed 30 times today
+          </p>
+        </div>
+        <p class="booking__alt">
+          Not the right fit? Check out our other Top Rated Bach Rentals in <a href="#">Orlando</a>
+        </p>
+      </aside>
+    </div>
+
+    <!-- filter and stay section -->
+    <section class="mt-5 container">
+      <h2 class="section-title">Find the Perfect Stay Near Eagle Creek Golf Club in Orlando, FL</h2>
+      <div class="filters">
+        <button type="button" class="filter__button">
+          Stay Within 10 Miles
+          <img src="assets/icons/chevron-down.svg" alt="down-icon" />
+        </button>
+        <button type="button" class="filter__button">
+          Property Type
+          <img src="assets/icons/chevron-down.svg" alt="down-icon" />
+        </button>
+        <button type="button" class="filter__button">
+          2 Bedroom
+          <img src="assets/icons/chevron-down.svg" alt="down-icon" />
+        </button>
+        <div class="filter__select" id="sort-select" data-value="most-popular">
+          <button type="button" class="filter__button filter__select-toggle">
+            <span class="filter__select-label">Most Popular</span>
+            <img src="assets/icons/chevron-down.svg" alt="down-icon" />
+          </button>
+          <ul class="filter__select-menu">
+            <li><button type="button" class="filter__select-option" data-value="most-popular">Most Popular</button></li>
+            <li><button type="button" class="filter__select-option" data-value="highest-price">Highest Price</button></li>
+            <li><button type="button" class="filter__select-option" data-value="lowest-price">Lowest Price</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="stay-layout">
+        <div class="stay-grid" id="stay-grid"></div>
+        <div class="stay-map" id="stayMap">
+          <img src="assets/map-orlando.png" alt="Map of stays near Eagle Creek Golf Club" />
+        </div>
+      </div>
+      <div class="stay-dots" id="stayDots"></div>
+      <div class="stay-footer">
+        <nav class="pager">
+          <a href="#" class="pager__prev">Previous</a>
+          <ul class="pager__list">
+            <li><a href="#" class="pager__link pager__link__active">01</a></li>
+            <li><a href="#" class="pager__link">02</a></li>
+            <li><a href="#" class="pager__link">03</a></li>
+            <li><a href="#" class="pager__link">04</a></li>
+            <li><a href="#" class="pager__link">05</a></li>
+            <li><span class="pager__more">…</span></li>
+          </ul>
+          <a href="#" class="pager__next">Next</a>
+        </nav>
+        <a href="#" class="view-all">View all places to stay</a>
+      </div>
+    </section>
+
+    <!-- highlights section -->
+    <section class="mt-5 container">
+      <div class="panel">
+        <h2 class="section-title">Eagle Creek Golf Club Highlights</h2>
+        <div class="hl-grid">
+          <article class="hl-grid__card">
+            <div class="hl-grid__group">
+              <img src="assets/icons/flag.svg" alt="" width="32" height="32" class="hl-grid__icon" />
+              <p class="hl-grid__title">Par and Difficulty</p>
+              <p class="hl-grid__text">Par 72 (Front 9: Par 36, Back 9: Par 36)</p>
+              <p class="hl-grid__text">Course Rating: 71.4</p>
+              <p class="hl-grid__text">Course Slope: 113</p>
+              <p class="hl-grid__note">Challenging for experts, enjoyable for intermediates, and welcoming for
+                beginners.</p>
+            </div>
+          </article>
+
+          <article class="hl-grid__card">
+            <div class="hl-grid__group">
+              <img src="assets/icons/yards.svg" alt="" width="32" height="32" class="hl-grid__icon" />
+              <p class="hl-grid__title">Yardage</p>
+              <p class="hl-grid__text">7,198 yards from the championship tees</p>
+              <p class="hl-grid__subtitle">Tee Box Options</p>
+              <p class="hl-grid__text">Championship: 7,198 yards</p>
+              <p class="hl-grid__text">Regular: 6,720 yards</p>
+              <p class="hl-grid__text">Forward: 5,942 yards</p>
+              <p class="hl-grid__text">Beginner: 5,152 yards</p>
+            </div>
+          </article>
+
+          <article class="hl-grid__card">
+            <div class="hl-grid__group">
+              <img src="assets/icons/course.svg" alt="" width="32" height="32" class="hl-grid__icon" />
+              <p class="hl-grid__title">Public Course</p>
+              <p class="hl-grid__text">No stay required</p>
+            </div>
+            <div class="hl-grid__group">
+              <img src="assets/icons/cart.svg" alt="" width="32" height="32" class="hl-grid__icon" />
+              <p class="hl-grid__title">Cart Recommended</p>
+              <p class="hl-grid__text">Walking allowed</p>
+            </div>
+          </article>
+
+          <article class="hl-grid__card">
+            <div class="hl-grid__group">
+              <img src="assets/icons/leaf.svg" alt="" width="32" height="32" class="hl-grid__icon" />
+              <p class="hl-grid__title">Course Style</p>
+              <p class="hl-grid__text">Parkland</p>
+            </div>
+            <div class="hl-grid__group">
+              <p class="hl-grid__title">Notable Features</p>
+              <p class="hl-grid__text">Tree-lined fairways, undulating greens, and strategically placed bunkers. Water
+                hazards come into play on several holes.</p>
+            </div>
+          </article>
+        </div>
+        <div class="hl-features">
+          <div class="hl-features__item">
+            <img src="assets/icons/course.svg" alt="" width="28" height="28" class="hl-features__icon" />
+            <div>
+              <p class="hl-features__title">18-Hole Championship Course</p>
+              <p class="hl-features__desc">Designed for all skill levels with challenging layouts.</p>
+            </div>
+          </div>
+          <div class="hl-features__item">
+            <img src="assets/icons/clock.svg" alt="" width="28" height="28" class="hl-features__icon" />
+            <div>
+              <p class="hl-features__title">Tee Time Flexibility</p>
+              <p class="hl-features__desc">Convenient booking options to suit your schedule.</p>
+            </div>
+          </div>
+          <div class="hl-features__item">
+            <img src="assets/icons/trophy.svg" alt="" width="28" height="28" class="hl-features__icon" />
+            <div>
+              <p class="hl-features__title">Architect and History</p>
+              <p class="hl-features__desc">Designed by renowned architect Ron Garl, the course has hosted regional
+                tournaments.</p>
+            </div>
+          </div>
+          <div class="hl-features__item">
+            <img src="assets/icons/clubhouse.svg" alt="" width="28" height="28" class="hl-features__icon" />
+            <div>
+              <p class="hl-features__title">Luxury Clubhouse</p>
+              <p class="hl-features__desc">Relax with premium dining, locker rooms and event spaces.</p>
+            </div>
+          </div>
+          <div class="hl-features__item">
+            <img src="assets/icons/course.svg" alt="" width="28" height="28" class="hl-features__icon" />
+            <div>
+              <p class="hl-features__title">Golf Lessons Available</p>
+              <p class="hl-features__desc">Expert instruction for players of all levels.</p>
+            </div>
+          </div>
+          <div class="hl-features__item">
+            <img src="assets/icons/shop.svg" alt="" width="28" height="28" class="hl-features__icon" />
+            <div>
+              <p class="hl-features__title">Pro Shop</p>
+              <p class="hl-features__desc">Fully stocked with top-tier gear, apparel and accessories.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="hl-packages"><strong>Special Packages</strong>&nbsp;&nbsp;Stay &amp; Play packages include two rounds of
+        golf, a cart, and accommodations at a nearby resort starting at $250 per person.</p>
+      <hr class="h-rule" />
+    </section>
+
+    <!-- Review section -->
+    <section class="mt-5 container">
+      <h2 class="section-title">Guest Reviews for Eagle Creek Golf Club</h2>
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="review-card__head">
+            <span class="review-card__date">Jan 01 2025</span>
+            <span class="review-card__stars">
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+            </span>
+          </div>
+          <p class="review-card__text">Eagle Creek challenges your strategy and precision, making it a perfect blend of
+            fun and competitive play.</p>
+          <div class="review-card__author">
+            <img src="assets/avatar-john-smith.jpg" alt="Golf Pro John Smith" class="review-card__avatar" />
+            <span class="review-card__name">Golf Pro John Smith</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__head">
+            <span class="review-card__date">Jan 01 2025</span>
+            <span class="review-card__stars">
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star review-card__star-muted"></span>
+            </span>
+          </div>
+          <p class="review-card__text">Average rating: 4.8/5 stars. Verified golfers praise the course conditions and
+            excellent service.</p>
+          <div class="review-card__author">
+            <img src="assets/avatar-john-smith.jpg" alt="Golf Pro John Smith" class="review-card__avatar" />
+            <span class="review-card__name">Golf Pro John Smith</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-card__head">
+            <span class="review-card__date">Jan 01 2025</span>
+            <span class="review-card__stars">
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star"></span>
+              <span class="review-card__star review-card__star-muted"></span>
+            </span>
+          </div>
+          <p class="review-card__text">Lorem ipsum odoconse ctetue adi iscinama monuam adipiscing eleifen hendre himen
+            aeos dictum.</p>
+          <div class="review-card__author">
+            <img src="assets/avatar-john-smith.jpg" alt="Golf Pro John Smith" class="review-card__avatar" />
+            <span class="review-card__name">Golf Pro John Smith</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- course features -->
+    <section class="mt-5 container">
+      <h2 class="section-title">Eagle Creek Course Features</h2>
+      <div class="features">
+        <article class="feature-card">
+          <h3 class="feature-card__title">Practice Facilities</h3>
+          <ul class="feature-card__list">
+            <li>Driving range with target greens</li>
+            <li>Putting green</li>
+            <li>Short game area with sand bunkers</li>
+            <li>Professional lessons available</li>
+          </ul>
+        </article>
+
+        <article class="feature-card">
+          <h3 class="feature-card__title">Amenities and Services</h3>
+          <div class="feature-card__group">
+            <h4 class="feature-card__subtitle">Caddies and Golf Cart Rentals</h4>
+            <ul class="feature-card__list">
+              <li>Availability: Golf carts are equipped with GPS and available for rental. Caddie services are available
+                upon request.</li>
+              <li>Costs: Cart rentals: $25; Caddie fees: $40/hour.</li>
+            </ul>
+          </div>
+          <hr class="h-rule" />
+          <div class="feature-card__group">
+            <h4 class="feature-card__subtitle">On-Course Food and Beverage</h4>
+            <ul class="feature-card__list">
+              <li>Multiple snack bars and a halfway house are conveniently located. Beverage carts circulate regularly.
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- best time weather -->
+    <section class="mt-5 container">
+      <h2 class="section-title best-time__title">When is the Best Time of Year to Play at Eagle Creek Golf Club?</h2>
+      <p class="best-time__intro">Fall and Spring are the best seasons to play at Eagle Creek Golf Club. During these
+        months, the weather is mild with minimal rain, providing perfect golfing conditions. Winter is also a great
+        option for those seeking year-round play in Florida's warmer climate.</p>
+
+      <div class="weather">
+        <div class="weather__today">
+          <p class="weather__date">Sunday Jan 19</p>
+          <p class="weather__place">Orlando, Florida</p>
+          <div class="weather__now">
+            <img src="assets/icons-white/cloud-rain.svg" alt="" width="40" height="40" />
+            <span class="weather__now-temp">24 °C</span>
+          </div>
+        </div>
+        <ul class="weather__days">
+          <li class="weather__day"><span class="weather__day-name">Sun</span><img
+              src="assets/icons-white/cloud-rain.svg" alt="" width="26" height="26" /><span>-15.2 °C</span></li>
+          <li class="weather__day"><span class="weather__day-name">Mon</span><img
+              src="assets/icons-white/cloud-rain.svg" alt="" width="26" height="26" /><span>-15.2 °C</span></li>
+          <li class="weather__day"><span class="weather__day-name">Tue</span><img
+              src="assets/icons-white/cloud-rain.svg" alt="" width="26" height="26" /><span>-15.2 °C</span></li>
+          <li class="weather__day"><span class="weather__day-name">Wed</span><img
+              src="assets/icons-white/cloud-rain.svg" alt="" width="26" height="26" /><span>-15.2 °C</span></li>
+          <li class="weather__day"><span class="weather__day-name">Thu</span><img
+              src="assets/icons-white/cloud-rain.svg" alt="" width="26" height="26" /><span>-15.2 °C</span></li>
+          <li class="weather__day"><span class="weather__day-name">Fri</span><img
+              src="assets/icons-white/cloud-rain.svg" alt="" width="26" height="26" /><span>-15.2 °C</span></li>
+          <li class="weather__day"><span class="weather__day-name">Sat</span><img
+              src="assets/icons-white/cloud-rain.svg" alt="" width="26" height="26" /><span>-15.2 °C</span></li>
+        </ul>
+      </div>
+
+      <div class="seasons">
+        <h3 class="seasons__title">Explore Vancouver's Weather Patterns</h3>
+        <div class="seasons__grid">
+          <div class="season">
+            <span class="season__icon"><img src="assets/icons/spring.svg" alt="" width="22" height="22" /></span>
+            <h4 class="season__title">Spring (March to May)</h4>
+            <p class="season__desc">Ideal for hiking, with blooming wildflowers and mild temperatures ranging from 60°F
+              to 80°F. This is the most popular season, so booking early is recommended.</p>
+            <hr class="h-rule" />
+            <p class="season__avg-title">Average Temperature</p>
+            <p class="season__avg">Daytime: 60°F to 80°F</p>
+            <p class="season__avg">Nighttime: 40°F to 55°F</p>
+          </div>
+          <div class="season">
+            <span class="season__icon"><img src="assets/icons/sun.svg" alt="" width="22" height="22" /></span>
+            <h4 class="season__title">Summer (June to August)</h4>
+            <p class="season__desc">Ideal for hiking, with blooming wildflowers and mild temperatures ranging from 60°F
+              to 80°F. This is the most popular season, so booking early is recommended.</p>
+            <hr class="h-rule" />
+            <p class="season__avg-title">Average Temperature</p>
+            <p class="season__avg">Daytime: 60°F to 80°F</p>
+            <p class="season__avg">Nighttime: 40°F to 55°F</p>
+          </div>
+          <div class="season">
+            <span class="season__icon"><img src="assets/icons/leaf.svg" alt="" width="22" height="22" /></span>
+            <h4 class="season__title">Fall (September to November)</h4>
+            <p class="season__desc">Ideal for hiking, with blooming wildflowers and mild temperatures ranging from 60°F
+              to 80°F. This is the most popular season, so booking early is recommended.</p>
+            <hr class="h-rule" />
+            <p class="season__avg-title">Average Temperature</p>
+            <p class="season__avg">Daytime: 60°F to 80°F</p>
+            <p class="season__avg">Nighttime: 40°F to 55°F</p>
+          </div>
+          <div class="season">
+            <span class="season__icon"><img src="assets/icons/snow.svg" alt="" width="22" height="22" /></span>
+            <h4 class="season__title">Winter (December to February)</h4>
+            <p class="season__desc">Cooler days and crisp evenings make it perfect for exploring Sedona's trails and
+              enjoying the vibrant autumn colors.</p>
+            <hr class="h-rule" />
+            <p class="season__avg-title">Average Temperature</p>
+            <p class="season__avg">Daytime: 60°F to 80°F</p>
+            <p class="season__avg">Nighttime: 40°F to 55°F</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other golf course section -->
+    <section class="mt-5 container">
+      <h2 class="section-title">Other Golf Courses Near Eagle Creek Golf Club</h2>
+      <div class="course-grid">
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/10.jpg" alt="Providence Golf Club" />
+          </div>
+          <div class="course-card__body">
+            <h3 class="course-card__name">Providence Golf Club</h3>
+            <p class="course-card__miles"><span class="course-card__pin"></span> 6 Miles</p>
+            <div class="course-card__stats">
+              <span><img src="assets/icons/yards.svg" alt="" width="16" height="16" /> Yards: 7305</span>
+              <span><img src="assets/icons/play-golf.svg" alt="" width="16" height="16" /> Par: 72</span>
+            </div>
+            <hr class="h-rule" />
+            <p class="course-card__note"><span class="course-card__leaf"></span> Phil Mickelson: Notable wins in the
+              AT&amp;T Pebble Beach Pro-Am.</p>
+            <div class="course-card__cta">
+              <button type="button" class="course-card__btn course-card__btn__outline">Stay Nearby</button>
+              <button type="button" class="course-card__btn course-card__btn__green">More Info</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/11.jpg" alt="ChampionsGate Golf Club" />
+          </div>
+          <div class="course-card__body">
+            <h3 class="course-card__name">ChampionsGate Golf Club</h3>
+            <p class="course-card__miles"><span class="course-card__pin"></span> 6 Miles</p>
+            <div class="course-card__stats">
+              <span><img src="assets/icons/yards.svg" alt="" width="16" height="16" /> Yards: 7305</span>
+              <span><img src="assets/icons/play-golf.svg" alt="" width="16" height="16" /> Par: 72</span>
+            </div>
+            <hr class="h-rule" />
+            <p class="course-card__note"><span class="course-card__leaf"></span> Phil Mickelson: Notable wins in the
+              AT&amp;T Pebble Beach Pro-Am.</p>
+            <div class="course-card__cta">
+              <button type="button" class="course-card__btn course-card__btn__outline">Stay Nearby</button>
+              <button type="button" class="course-card__btn course-card__btn__green">More Info</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/12.jpg" alt="Nicklaus Course At Reunion Resort" />
+          </div>
+          <div class="course-card__body">
+            <h3 class="course-card__name">Nicklaus Course At Reunion Resort</h3>
+            <p class="course-card__miles"><span class="course-card__pin"></span> 6 Miles</p>
+            <div class="course-card__stats">
+              <span><img src="assets/icons/yards.svg" alt="" width="16" height="16" /> Yards: 7305</span>
+              <span><img src="assets/icons/play-golf.svg" alt="" width="16" height="16" /> Par: 72</span>
+            </div>
+            <hr class="h-rule" />
+            <p class="course-card__note"><span class="course-card__leaf"></span> Phil Mickelson: Notable wins in the
+              AT&amp;T Pebble Beach Pro-Am.</p>
+            <div class="course-card__cta">
+              <button type="button" class="course-card__btn course-card__btn__outline">Stay Nearby</button>
+              <button type="button" class="course-card__btn course-card__btn__green">More Info</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="course-footer">
+        <a href="#" class="view-all">Explore More Courses</a>
+        <div class="course-nav">
+          <button type="button" class="course-nav__btn">
+            <img src="assets/icons/chevron-left.svg" alt="previous" width="18" height="18" />
+          </button>
+          <button type="button" class="course-nav__btn course-nav__btn__dark">
+            <img src="assets/icons-white/chevron-right.svg" alt="next" width="18" height="18" />
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <nav class="footer__links">
+        <ul class="footer__col">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Where to Stay</a></li>
+          <li><a href="#">Where to Play</a></li>
+          <li><a href="#">Group Travel</a></li>
+          <li><a href="#">Travel Blog</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+        <ul class="footer__col">
+          <li><a href="#">USA</a></li>
+          <li><a href="#">Scotland</a></li>
+          <li><a href="#">Portugal</a></li>
+          <li><a href="#">Spain</a></li>
+          <li><a href="#">Ireland</a></li>
+          <li><a href="#">Australia</a></li>
+          <li><a href="#">Turkey</a></li>
+          <li><a href="#">South Africa</a></li>
+        </ul>
+        <ul class="footer__col">
+          <li><a href="#">Thailand</a></li>
+          <li><a href="#">New Zealand</a></li>
+          <li><a href="#">UAE</a></li>
+          <li><a href="#">Canary Islands</a></li>
+          <li><a href="#">Mauritius</a></li>
+          <li><a href="#">Bermuda</a></li>
+          <li><a href="#">Argentina</a></li>
+          <li><a href="#">Barbados</a></li>
+        </ul>
+        <ul class="footer__col">
+          <li><a href="#">Mexico</a></li>
+          <li><a href="#">Canada</a></li>
+          <li><a href="#">China</a></li>
+          <li><a href="#">France</a></li>
+          <li><a href="#">Malaysia</a></li>
+          <li><a href="#">South Korea</a></li>
+          <li><a href="#">Japan</a></li>
+          <li><a href="#">Indonesia</a></li>
+        </ul>
+      </nav>
+      <div class="footer__side">
+        <div class="footer__socials">
+          <a href="#" class="footer__social"><img src="assets/icons-white/facebook.svg" alt="Facebook" width="18" height="18" /></a>
+          <a href="#" class="footer__social"><img src="assets/icons-white/twitter.svg" alt="Twitter" width="18" height="18" /></a>
+          <a href="#" class="footer__social"><img src="assets/icons-white/instagram.svg" alt="Instagram" width="18" height="18" /></a>
+        </div>
+        <div class="footer__selects">
+          <button type="button" class="footer__select">
+            USD
+            <img src="assets/icons-white/chevron-down.svg" alt="" width="16" height="16" />
+          </button>
+          <button type="button" class="footer__select">
+            United States
+            <img src="assets/icons-white/chevron-down.svg" alt="" width="16" height="16" />
+          </button>
+        </div>
+        <div class="footer__brand">
+          <img src="assets/icons-white/travelai-logo.svg" alt="TravelAi" width="30" height="30" class="footer__brand-mark" />
+          <span class="footer__brand-name">TRAVELAI</span>
+          <span class="footer__brand-tag">Stay&amp;Play <br/> Powered by TravelAi</span>
+        </div>
+        <p class="footer__copy">&copy; 2025 StayAndPlay, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Gallery modal -->
+  <div class="gmodal" id="galleryModal" hidden>
+    <div class="gmodal__dialog">
+      <button type="button" class="gmodal__close" id="galleryClose">&times;</button>
+
+      <div class="gmodal__viewport" id="galleryViewport">
+        <div class="gmodal__track" id="galleryTrack"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Guests modal -->
+  <div class="pmodal" id="guestsModal" hidden>
+    <div class="pmodal__dialog">
+      <div class="pmodal__head">
+        <span class="pmodal__title">Guests</span>
+        <button type="button" class="pmodal__close" id="guestsClose">&times;</button>
+      </div>
+      <div class="pmodal__row">
+        <span>Guests</span>
+        <div class="pmodal__stepper">
+          <button type="button" class="pmodal__btn" data-counter="guests" data-step="-1">&minus;</button>
+          <span class="pmodal__count" id="countGuests">1</span>
+          <button type="button" class="pmodal__btn" data-counter="guests" data-step="1">+</button>
+        </div>
+      </div>
+      <div class="pmodal__row">
+        <span>Infants</span>
+        <div class="pmodal__stepper">
+          <button type="button" class="pmodal__btn" data-counter="infants" data-step="-1">&minus;</button>
+          <span class="pmodal__count" id="countInfants">0</span>
+          <button type="button" class="pmodal__btn" data-counter="infants" data-step="1">+</button>
+        </div>
+      </div>
+      <div class="pmodal__row">
+        <span>Pets</span>
+        <div class="pmodal__stepper">
+          <button type="button" class="pmodal__btn" data-counter="pets" data-step="-1">&minus;</button>
+          <span class="pmodal__count" id="countPets">0</span>
+          <button type="button" class="pmodal__btn" data-counter="pets" data-step="1">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/fecha/dist/fecha.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hotel-datepicker/dist/js/hotel-datepicker.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
