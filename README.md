@@ -1,4 +1,4 @@
-# Eagle Creek Golf Club — Stay & Play
+# Eagle Creek Golf Club — Stay & Play (Express.js)
 
 A single property page (Eagle Creek Golf Club, Orlando) served by an **Express.js**
 server and made interactive with **vanilla JavaScript (ES modules)**. The static page
