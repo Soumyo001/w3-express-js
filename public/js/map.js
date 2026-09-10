@@ -50,7 +50,7 @@ const renderMarkers = (properties) => {
     markers.set(String(p.id), marker);
     bounds.extend(position);
   });
-  if (markers.size) map.fitBounds(bounds);
+  if (markers.size) map.fitBounds(bounds); 
 };
 
 export const initMap = async () => {
